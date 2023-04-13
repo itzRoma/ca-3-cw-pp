@@ -1,5 +1,7 @@
 package com.itzroma;
 
+import com.itzroma.concurrent.ConcurrentRunner;
+
 /**
  * Архітектура комп'ютерів 3: Курсова робота, частина 2
  * <p>
@@ -17,10 +19,14 @@ package com.itzroma;
  * <p>
  * Автор: Бондаренко Роман Ігорович, група ІО-03
  * <p>
- * Дата: 10/04/2023 - XX/04/2023
+ * Дата: 10/04/2023 - 14/04/2023
  */
 public class Main {
+
+    public static final int NUMBER_OF_THREADS = 32;
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        long result = new ConcurrentRunner(NUMBER_OF_THREADS, 900).call();
+        System.out.printf("%nCalculation finished, it took %d ms%n", result);
     }
 }
