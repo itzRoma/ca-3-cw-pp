@@ -13,9 +13,9 @@ import com.itzroma.concurrent.ConcurrentRunner;
  * <p>
  * Введення - виведення:
  * <p>
- * Потік 1: A, B, MX
+ * - Потік 1: A, B, MX
  * <p>
- * Потік P: Z, D, C, MR
+ * - Потік P: Z, D, C, MR
  * <p>
  * Автор: Бондаренко Роман Ігорович, група ІО-03
  * <p>
