@@ -23,10 +23,11 @@ import com.itzroma.concurrent.ConcurrentRunner;
  */
 public class Main {
 
-    public static final int NUMBER_OF_THREADS = 32;
+    public static final int NUMBER_OF_THREADS = 16;
+    public static final int NUMBER_OF_ELEMENTS = 2700;
 
     public static void main(String[] args) {
-        long result = new ConcurrentRunner(NUMBER_OF_THREADS, 900).call();
+        long result = new ConcurrentRunner(NUMBER_OF_THREADS, NUMBER_OF_ELEMENTS).call();
         System.out.printf("%nCalculation finished, it took %d ms%n", result);
     }
 }

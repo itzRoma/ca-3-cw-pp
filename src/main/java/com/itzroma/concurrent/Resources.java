@@ -2,21 +2,21 @@ package com.itzroma.concurrent;
 
 public class Resources {
 
-    protected final int n; // size of vectors and matrices
+    public final int n; // size of vectors and matrices
 
-    protected int a; // shared
-    protected int m; // shared
+    public int a; // shared
+    public int m; // shared
 
-    protected final int[] A;
-    protected final int[] B;
-    protected final int[] C;
-    protected final int[] Z;
-    protected final int[] D; // shared
-    protected final int[] R;
+    public final int[] A;
+    public final int[] B;
+    public final int[] C;
+    public final int[] Z;
+    public final int[] D; // shared
+    public final int[] R;
 
-    protected final int[][] MX; // shared
-    protected final int[][] MR;
-    protected final int[][] MA;
+    public final int[][] MX; // shared
+    public final int[][] MR;
+    public final int[][] MA;
 
     public Resources(int n) {
         this.n = n;
